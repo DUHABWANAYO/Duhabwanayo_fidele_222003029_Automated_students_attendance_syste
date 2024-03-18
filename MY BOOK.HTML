@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>My Book</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body bgcolor="sky blue">
+    <p>
+        <center>
+        <ul style="list-style-type: none;  padding: 0;">
+        <li style="display: inline; background-color:green; margin-right: 10px"><a href="./home.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">HOME</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./about.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">ABOUT</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./contact.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">CONTACT</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./services.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">SERVICES</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./form.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">FORM</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./table.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">TABLE</a></li>
+        <li style="display: inline; background-color:pink; margin-right: 10px"><a href="./MYBOOK.html"
+            style="padding: 10px;color: white;background-color: green;text-decoration: none;margin-right: 15px;">MYBOOK</a></li>
+    </ul></center>
+<h1><u>Automated Students Attendance System</u></h1>
+    <ol><h2><u><li>DATABASE</li></u></h2>
+        <ul type="square"><h2><u><i><li>Tables</li></i></u></h2>
+    
+         <ol><li><b>STUDENT TABLE:</b></li>
+
+              <p>The Student table stores information about individual students enrolled in the educational institution.
+              The Typical attributes might include student ID, name, email, contact number, address, and any other relevant demographic information.
+              This table is essential for maintaining a comprehensive database of students enrolled in courses and tracking their attendance records.</p></br>
+
+            <li><b>COURSE TABLE:</b></li>
+
+                <p>The Course table stores information about the courses offered by the educational institution.
+             The Typical attributes might include course ID, course name, course code, description, instructor ID (linked to the Faculty table), and any other relevant details about the course.
+             This table helps administrators and instructors manage course offerings, assign instructors, and track course-related data such as attendance, grades, and schedules.</p></br>
+
+            <li><b>ATTENDANCE TABLE:</b></li>
+
+                <p>The Attendance table records the attendance data for students in each course session.
+            The Typical attributes might include attendance ID, student ID (linked to the Student table), course ID (linked to the Course table), date, and attendance status (e.g., present, absent, late).
+            This table is crucial for tracking student attendance over time, generating attendance reports, and identifying patterns or trends in student attendance behavior.</p></br>
+
+            <li><b>FACULTY TABLE:</b></li>
+
+                <p>The Faculty table stores information about instructors or faculty members teaching the courses.
+            The Typical attributes might include faculty ID, name, email, contact number, department, and any other relevant details about the faculty member.
+            This table facilitates the assignment of instructors to courses, tracking instructor information, and managing faculty-related data within the system.</p></br>
+
+            <li><b>ENROLLMENTS TABLE:</b></li>
+
+                <p>The Enrollments table records the enrollment status of students in each course.
+            The Typical attributes might include enrollment ID, student ID (linked to the Student table), course ID (linked to the Course table), enrollment date, and any other relevant enrollment-related details.
+            This table helps administrators manage student enrollments in courses, track enrollment history, and ensure accurate course rosters.</p></br>
+
+
+    
+               <h3><u><i><li>Attributes</li></i></u></h2>
+
+         <b><u>Attributes of STUDENT TABLE:</b></br></u>
+       </ol>
+<ol type="i">
+   
+
+    <li><p><b><i>Student_ID(primary key):</i></b></li> Unique identifier for each student</br></p> 
+
+    <li><p><b><i>First_Name:</i></b></li> the first name of the student</br></p>
+
+    <li><p><b><i>Last_Name:</i></b></li> the last name of student</br></p> 
+
+    <li><p><b><i>Date_Of_Birth:</i></b></li> the date when student born</br></p>  
+
+    <li><p><b><i>Email:</i></b></li>email of student</br></p>
+
+
+
+
+
+    <b>Attributes of COURSE TABLE:</b></br>
+
+    <ol type="i">
+
+
+   
+
+    <li><p><b><i>Course_ID(primary key):</i></b></li> Unique identifier for each course</br></p> 
+
+    <li><p><b><i>Course Name(varchar):</i></b></li> Name of the course</br></p>
+
+    <li><p><b><i>Course_code(varchar):</i></b></li> code of course such as A222, ACC212</br></p> 
+
+   
+
+    <b>Attributes of ATTENDANCE TABLE:</b></br>
+    <ol type="i">
+
+
+
+    <li><p><b><i>Attendance_ID(Primary key):</i></b></li> Unique identifier for attendance records</br></p> 
+
+    <li><p><b><i>Student_ID(varchar):</i></b></li> The student attending the class</br></p>
+
+    <li><p><b><i>Course_ID(varchar):</i></b></li> The course for which the attendance is being recorded</br></p> 
+
+    <li><p><b><i>Date(Date):</i></b></li> The date on which the attendance is being recorded</br></p>  
+
+    <li><p><b><i>Status (varchar):</i></b></li>Attendance status, such as present, absent, late, etc.</br></p>
+
+
+
+    
+
+    <b>Attributes of FACULTY TABLE:</b></br>
+    <ol type="i">
+
+
+
+   
+
+    <li><p><b><i>faculty_id(Primary key):</i></b></li>HJKL;Unique identifier for faculty</br></p> 
+
+    <li><p><b><i>name: </i></b></li> the name of each faculty</br></p>
+
+    <li><p><b><i>contact_information(varchar):</i></b></li> the contact of students included in each faculty</br></p> 
+
+    <li><p><b><i>Course_id:</i></b></li>the identifiers of courses included in every faculty</br></p>  
+
+    <li><p><b><i>Lecturer_name:</i></b></li> the names of faculty’s lecturer names</br></p>
+
+
+
+        
+        </ul>
+        <h2><li><u>JAVA</u></li></h2>
+        <ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+            <b><u>INTRODUCTION</b></u>
+
+ <p> In today's rapidly evolving educational landscape, the need for efficient and accurate attendance management systems has become paramount. Traditional methods of recording student attendance manually are time-consuming and prone to errors. To address these challenges, this project introduces an Automated Students Attendance System developed in Java programming. Leveraging the power of technology, this system aims to streamline the attendance tracking process, enhance data accuracy, and provide educators with a more effective tool for managing student attendance.</p><br>
+ 
+    <b>TOOLS USED TO DEVELOP THIS SYSTEM in java programming</b><br>
+   
+
+<li><p><b>Eclipse IDE:</b></li> an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and was the most popular. </p><br>
+
+<li><p><b>JAR stands for Java Archive:</b></li>  It's a file format based on the popular ZIP file format and is used for aggregating many files into one. Although JAR can be used as a general archiving tool, the primary motivation for its development was so that Java applets and their requisite components.<br></p>
+
+<li><p><b>Java Development Kit (JDK):</b></li> JDK provides the necessary tools for Java application development, including the Java Compiler (javac) and the Java Virtual Machine (JVM).<br></p><br><br><br><br>
+ 
+              
+
+                          <h3><u><i><li>FORMS AND IT'S IMAGES</li></i></u></h3>
+        
+    <b>students_form: This form likely pertains to student information, including details such as names, ID, Emails and possibly contact information.</b>
+</p><br><img src="stdnt.png"width=500 height=300><br><br><br><br>
+
+    <b>courses_form: This form is likely related to course details, including information about the courses offered, their codes, and other relevant data.</b></br>
+    </p><br><img src="course form jpg.png"width=500 height=300><br><br><br><br>
+
+    <b>faculty_form: This form is probably associated with faculty or staff information, encompassing details about instructors, their roles, and possibly contact information.</b></br>
+    </p><br><img src="faculty form jpg.png"width=500 height=300><br><br><br><br>
+
+    <b>enrollment_form: This form would likely handle the enrollment process, capturing information about students enrolling in specific courses or programs.</b></br>
+    </p><br><img src="enrollment form jpg.png"width=500 height=300><br><br><br><br>
+
+    <b>admin_registration_form: This form is likely for administrative registration, capturing details about individuals with administrative roles, such as administrators or system managers.</b></br>
+    </p><br><img src="admin_registration_form jpg.png"width=500 height=300><br><br><br><br>
+
+    <b>Menu_form: This form might be related to the user interface or navigation menu, allowing users to interact with different sections or functionalities within the system.</b></br>
+    </p><br><img src="Menu_form jpg.png"width=500 height=300><br><br><br><br>
+
+    <b>login_form: This form is likely used for user authentication, requiring input of valid credentials (like username and password) to access the system.</b></br>
+    </p><br><img src="login_form jpg.png"width=500 height=300><br><br><br><br>
+
+
+
+       </ul>
+        
+    </ol>
+    <marquee><u><i><h2 style="color: blue;">Prepared By</i></u>:   Fidele DUHABWANAYO</h2></marquee>
+    </body>
+    </html>
